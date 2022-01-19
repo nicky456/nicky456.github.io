@@ -56,8 +56,8 @@ a img {
 
 @media only screen and (max-width: 600px) {
   .calculator {
-    width: 90vw;
-    height: 90vh;
+    width: 85vw;
+    height: 85vh;
   }
 }
 
