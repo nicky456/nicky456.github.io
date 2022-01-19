@@ -45,13 +45,20 @@ a img {
 
 .calculator {
   position: relative;
-  max-width: 360px;
-  max-height: 580px;
+  width: 360px;
+  height: 580px;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
   background-color: #121212;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+  .calculator {
+    width: 90vw;
+    height: 90vh;
+  }
 }
 
 .light.calculator {
