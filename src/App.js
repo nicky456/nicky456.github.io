@@ -2,7 +2,7 @@ import "./Calculator.css";
 import { useState } from "react";
 
 const toLocaleString = (num) =>
-  String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, "$1 ");
+  String(num).replace(/(?:\/)([^#]+)(?=#|$)/g, "$1 ");
 
 const removeSpaces = (num) => num.toString().replace(/\s/g, "");
 
