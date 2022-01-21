@@ -1,110 +1,49 @@
 import "./Calculator.css";
 import { useState } from "react";
 
-const toLocaleString = (num) =>
-  String(num).replace(/(?:\/)([^#]+)(?=#|$)/g, "$1 ");
-
-const removeSpaces = (num) => num.toString().replace(/\s/g, "");
-
 function App() {
-  let [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const handleThemeChange = () => {
     setIsDarkMode(!isDarkMode);
   };
 
-  let [calc, setCalc] = useState({
-    sign: "",
-    num: 0,
-    res: 0,
-  });
+  const [calc, setCalc] = useState("");
+  const [result, setResult] = useState("");
 
-  const numClickHandler = (e) => {
-    // e.preventDefault();
-    const value = e.target.innerHTML;
-    console.log(value);
+  const operators = ["/", "*", "+", "-", "."];
 
-    if (removeSpaces(calc.num).length < 16) {
-      setCalc({
-        ...calc,
-        num:
-          calc.num === 0 && value === "0"
-            ? "0"
-            : removeSpaces(calc.num) % 1 === 0
-            ? toLocaleString(Number(removeSpaces(calc.num + value)))
-            : toLocaleString(calc.num + value),
-        res: !calc.sign ? 0 : calc.res,
-      });
+  const updateCalc = (value) => {
+    if (
+      (operators.includes(value) && calc === "") ||
+      (operators.includes(value) && operators.includes(calc.slice(-1)))
+    ) {
+      return;
+    }
+
+    setCalc(calc + value);
+
+    if (!operators.includes(value)) {
+      setResult(eval(calc + value).toString());
     }
   };
 
-  const decimalClickHandler = (e) => {
-    e.preventDefault();
-    const value = e.target.innerHTML;
-
-    setCalc({
-      ...calc,
-      num: !calc.num.toString().includes(".") ? calc.num + value : calc.num,
-    });
-  };
-
-  const invertClickHandler = () => {
-    setCalc({
-      ...calc,
-      num: calc.num ? calc.num * -1 : 0,
-      res: calc.res ? calc.res * -1 : 0,
-      sign: "",
-    });
-  };
-
-  const signClickHandler = (e) => {
-    e.preventDefault();
-    const value = e.target.innerHTML;
-
-    setCalc({
-      ...calc,
-      sign: value,
-      res: !calc.res && calc.num ? calc.num : calc.res,
-      num: 0,
-    });
-  };
-
-  const equalsClickHandler = () => {
-    if (calc.sign && calc.num) {
-      const math = (a, b, sign) =>
-        sign === "+"
-          ? a + b
-          : sign === "-"
-          ? a - b
-          : sign === "×"
-          ? a * b
-          : a / b;
-
-      setCalc({
-        ...calc,
-        res:
-          calc.num === "0" && calc.sign === "/"
-            ? "Can't divide with 0"
-            : toLocaleString(
-                math(
-                  Number(removeSpaces(calc.res)),
-                  Number(removeSpaces(calc.num)),
-                  calc.sign
-                )
-              ),
-        sign: "",
-        num: 0,
-      });
-    }
+  const calculate = () => {
+    setCalc(eval(calc).toString());
   };
 
   const resetClickHandler = () => {
-    setCalc({
-      ...calc,
-      sign: "",
-      num: 0,
-      res: 0,
-    });
+    setCalc("");
+  };
+
+  const deleteLast = () => {
+    if (calc === "") {
+      return;
+    }
+
+    const value = calc.slice(0, -1);
+
+    setCalc(value);
   };
 
   return (
@@ -119,124 +58,108 @@ function App() {
           mode="single"
           max={70}
         >
-          {calc.num ? calc.num : calc.res}
+          {calc ? calc : "0"}
         </div>
         <div className="button-box">
           <button
             className={isDarkMode ? "num" : "light num"}
-            value={7}
-            onClick={numClickHandler}
+            onClick={() => updateCalc("7")}
           >
             7
           </button>
           <button
             className={isDarkMode ? "num" : "light num"}
-            value={8}
-            onClick={numClickHandler}
+            onClick={() => updateCalc("8")}
           >
             8
           </button>
           <button
             className={isDarkMode ? "num" : "light num"}
-            value={9}
-            onClick={numClickHandler}
+            onClick={() => updateCalc("9")}
           >
             9
           </button>
           <button
             className={isDarkMode ? "operation" : "light operation"}
-            value={"+"}
-            onClick={signClickHandler}
+            onClick={deleteLast}
           >
-            +
+            ←
           </button>
+
           <button
             className={isDarkMode ? "num" : "light num"}
-            value={4}
-            onClick={numClickHandler}
+            onClick={() => updateCalc("4")}
           >
             4
           </button>
           <button
             className={isDarkMode ? "num" : "light num"}
-            value={5}
-            onClick={numClickHandler}
+            onClick={() => updateCalc("5")}
           >
             5
           </button>
           <button
             className={isDarkMode ? "num" : "light num"}
-            value={6}
-            onClick={numClickHandler}
+            onClick={() => updateCalc("6")}
           >
             6
           </button>
           <button
             className={isDarkMode ? "operation" : "light operation"}
-            value={"-"}
-            onClick={signClickHandler}
+            onClick={() => updateCalc("+")}
+          >
+            +
+          </button>
+
+          <button
+            className={isDarkMode ? "num" : "light num"}
+            onClick={() => updateCalc("1")}
+          >
+            1
+          </button>
+          <button
+            className={isDarkMode ? "num" : "light num"}
+            onClick={() => updateCalc("2")}
+          >
+            2
+          </button>
+          <button
+            className={isDarkMode ? "num" : "light num"}
+            onClick={() => updateCalc("3")}
+          >
+            3
+          </button>
+          <button
+            className={isDarkMode ? "operation" : "light operation"}
+            onClick={() => updateCalc("-")}
           >
             -
           </button>
 
           <button
             className={isDarkMode ? "num" : "light num"}
-            value={1}
-            onClick={numClickHandler}
-          >
-            1
-          </button>
-          <button
-            className={isDarkMode ? "num" : "light num"}
-            value={2}
-            onClick={numClickHandler}
-          >
-            2
-          </button>
-          <button
-            className={isDarkMode ? "num" : "light num"}
-            value={3}
-            onClick={numClickHandler}
-          >
-            3
-          </button>
-          <button
-            className={isDarkMode ? "operation" : "light operation"}
-            value={"×"}
-            onClick={signClickHandler}
-          >
-            ×
-          </button>
-
-          <button
-            className={isDarkMode ? "num" : "light num"}
-            value={"."}
-            onClick={decimalClickHandler}
+            onClick={() => updateCalc(".")}
           >
             .
           </button>
           <button
             className={isDarkMode ? "num" : "light num"}
-            value={0}
-            onClick={numClickHandler}
+            onClick={() => updateCalc("0")}
           >
             0
           </button>
           <button
-            className={isDarkMode ? "num" : "light num"}
-            value={"+/-"}
-            onClick={invertClickHandler}
-          >
-            +/-
-          </button>
-          <button
             className={isDarkMode ? "operation" : "light operation"}
-            value={"/"}
-            onClick={signClickHandler}
+            onClick={() => updateCalc("/")}
           >
             /
           </button>
-
+          <button
+            className={isDarkMode ? "operation" : "light operation"}
+            onClick={() => updateCalc("*")}
+          >
+            ×
+          </button>
           <button
             className={isDarkMode ? "reset" : "light reset"}
             value={"RESET"}
@@ -247,7 +170,7 @@ function App() {
           <button
             className={isDarkMode ? "equals" : "light equals"}
             value={"="}
-            onClick={equalsClickHandler}
+            onClick={calculate}
           >
             =
           </button>
