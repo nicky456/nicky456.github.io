@@ -92,6 +92,7 @@ function Intro() {
   return (
     <div className="intro" onMouseMove={slideX}>
       <div className="intro-min">
+        <h2 className="text">hi, i'm niki</h2>
         <img src={intro} alt="intro" />
         <div className="left">
           <h2 style={style.header}>explorer</h2>
@@ -182,8 +183,8 @@ function Intro() {
             </div>
           </ParallaxMousemove>
         </div>
+        <h1 className="text">hi, i'm niki</h1>
       </div>
-      <h1 className="text">hi, i'm niki</h1>
     </div>
   );
 }

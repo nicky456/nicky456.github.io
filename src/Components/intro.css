@@ -88,6 +88,12 @@
     margin-bottom: -10px;
   }
 
+  .intro-min h2 {
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.2em;
+  }
+
   .intro-min .left {
     position: relative;
     text-align: center;
