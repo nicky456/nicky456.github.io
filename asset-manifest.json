@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee3c2b3e.css",
-    "main.js": "/static/js/main.2ee095b1.js",
+    "main.css": "/static/css/main.80484c54.css",
+    "main.js": "/static/js/main.05b21020.js",
     "static/js/787.42c3c54b.chunk.js": "/static/js/787.42c3c54b.chunk.js",
-    "static/media/light-bg.svg": "/static/media/light-bg.94d669e89e79a074db07.svg",
-    "static/media/dark-bg.svg": "/static/media/dark-bg.0470dfec7208d3ef9917.svg",
+    "static/media/intro.png": "/static/media/intro.2789461aa90f094a3785.png",
+    "static/media/niki_1.png": "/static/media/niki_1.07819e67e158bc3f448e.png",
+    "static/media/niki_bw.png": "/static/media/niki_bw.e2d5f4612f6f4488447a.png",
+    "static/media/multi-color-powder-explosion-white-background.jpg": "/static/media/multi-color-powder-explosion-white-background.cb9b122604c75d141b3a.jpg",
+    "static/media/code_bg.png": "/static/media/code_bg.9e8660e4c45f981a7da6.png",
     "index.html": "/index.html",
-    "main.ee3c2b3e.css.map": "/static/css/main.ee3c2b3e.css.map",
-    "main.2ee095b1.js.map": "/static/js/main.2ee095b1.js.map",
+    "main.80484c54.css.map": "/static/css/main.80484c54.css.map",
+    "main.05b21020.js.map": "/static/js/main.05b21020.js.map",
     "787.42c3c54b.chunk.js.map": "/static/js/787.42c3c54b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee3c2b3e.css",
-    "static/js/main.2ee095b1.js"
+    "static/css/main.80484c54.css",
+    "static/js/main.05b21020.js"
   ]
 }
