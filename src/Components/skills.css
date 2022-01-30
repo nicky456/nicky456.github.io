@@ -1,8 +1,8 @@
 .skills {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  width: 70%;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 800px;
   margin: 50px auto 100px auto;
 
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -10,6 +10,12 @@
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    width: 80%;
+  }
 }
 
 /*Fade-In*/
