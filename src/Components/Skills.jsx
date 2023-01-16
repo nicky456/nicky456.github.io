@@ -5,9 +5,9 @@ const Skills = () => {
   const testData = [
     { bgcolor: "#2eb8e9", completed: 80, label: "CSS" },
     { bgcolor: "#fe0b55", completed: 85, label: "HTML" },
-    { bgcolor: "#5570d1", completed: 70, label: "JavaScipt" },
-    { bgcolor: "#fc670b", completed: 60, label: "React" },
-    { bgcolor: "#8f4ec2", completed: 25, label: "Node.js" },
+    { bgcolor: "#5570d1", completed: 80, label: "JavaScipt" },
+    { bgcolor: "#fc670b", completed: 80, label: "React" },
+    { bgcolor: "#8f4ec2", completed: 20, label: "Node.js" },
     { bgcolor: "#ffa101", completed: 80, label: "Adobe Illustrator" },
     { bgcolor: "#f00190", completed: 60, label: "Adobe Photoshop" },
     { bgcolor: "#63b873", completed: 90, label: "Wordpress" },

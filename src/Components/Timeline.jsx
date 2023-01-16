@@ -13,6 +13,26 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
+            background: "linear-gradient(315deg, #38ceb7 0%, #12a49f 100%)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  #38ceb7" }}
+          date="2021 - present"
+          iconStyle={{
+            background: "linear-gradient(315deg, #38ceb7 0%, #12a49f 100%)",
+            color: "#fff",
+          }}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Frontend Developer
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            SKVAD DIGITAL | Budapest
+          </h4>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
             background: "linear-gradient(315deg, #2eb8e9 0%,  #5570d1 100%)",
             color: "#fff",
           }}
