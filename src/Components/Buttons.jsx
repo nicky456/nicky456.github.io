@@ -1,4 +1,5 @@
 import "./buttons.css";
+import cv from "../img/niki-cv.pdf";
 
 const Buttons = () => {
   return (
@@ -24,11 +25,7 @@ const Buttons = () => {
         >
           What in the World!?
         </a>
-        <a
-          href="https://drive.google.com/drive/folders/1Snlm5fm1WFOWjaOHRA36Jr9fJv1zXDAP?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={cv} target="_blank" rel="noreferrer">
           Download my CV
         </a>
         <a href="https://github.com/nicky456" target="_blank" rel="noreferrer">
