@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.98563d02.css",
-    "main.js": "/static/js/main.ae6873b9.js",
+    "main.js": "/static/js/main.78eadb66.js",
     "static/js/787.2b0a1616.chunk.js": "/static/js/787.2b0a1616.chunk.js",
     "static/media/intro.png": "/static/media/intro.2789461aa90f094a3785.png",
     "static/media/niki_1.png": "/static/media/niki_1.07819e67e158bc3f448e.png",
     "static/media/niki_bw.png": "/static/media/niki_bw.e2d5f4612f6f4488447a.png",
     "static/media/multi-color-powder-explosion-white-background.jpg": "/static/media/multi-color-powder-explosion-white-background.cb9b122604c75d141b3a.jpg",
+    "static/media/niki-cv.pdf": "/static/media/niki-cv.1cfdd9b64a6f90cc3313.pdf",
     "static/media/code_bg.png": "/static/media/code_bg.9e8660e4c45f981a7da6.png",
     "index.html": "/index.html",
     "main.98563d02.css.map": "/static/css/main.98563d02.css.map",
-    "main.ae6873b9.js.map": "/static/js/main.ae6873b9.js.map",
+    "main.78eadb66.js.map": "/static/js/main.78eadb66.js.map",
     "787.2b0a1616.chunk.js.map": "/static/js/787.2b0a1616.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98563d02.css",
-    "static/js/main.ae6873b9.js"
+    "static/js/main.78eadb66.js"
   ]
 }
