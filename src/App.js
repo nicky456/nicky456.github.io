@@ -4,14 +4,16 @@ import Skills from "./Components/Skills";
 import Timeline from "./Components/Timeline";
 import Buttons from "./Components/Buttons";
 import "./style.css";
+import Introtext from "./Components/Introtext";
 
 function App() {
   return (
     <div>
       <Intro></Intro>
       <CareerSearch />
-      <Buttons />
       <Skills />
+      <Introtext />
+      <Buttons />
       <Timeline />
     </div>
   );

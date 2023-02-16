@@ -37,22 +37,7 @@
   transform: scale(1.1);
 }
 
-.contact {
-  font-family: "Montserrat";
-  text-align: center;
-  font-size: 20px;
-}
 
-.contact a {
-  color: #fe0b55;
-  font-weight: 600;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.contact a:hover {
-  font-size: 24px;
-}
 
 /*Fade-In*/
 @keyframes fadein {

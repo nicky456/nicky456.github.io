@@ -47,6 +47,10 @@
   margin-top: 5px !important;
 }
 
+.list{
+  text-align: left;
+}
+
 .timeline
   .vertical-timeline--two-columns
   .vertical-timeline-element-content

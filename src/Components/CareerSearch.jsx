@@ -20,11 +20,18 @@ function CareerSearch() {
   );
 
   return (
-    <div className="hero">
-      <h3 className="text">
-        and i am looking for the next step in my career path
-      </h3>
-    </div>
+    <>
+      <div className="hero">
+        <h3 className="text">frontend developer</h3>
+        <p>energetic | go-getter attitude | proactive | hard-working | funny</p>
+      </div>
+      <div className="contact">
+        <p>Feel free to contact me at</p>
+        <p>
+          <a href="mailto:sznici@gmail.com"> sznici@gmail.com</a>
+        </p>
+      </div>
+    </>
   );
 }
 

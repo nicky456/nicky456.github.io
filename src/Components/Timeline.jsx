@@ -29,6 +29,13 @@ const Timeline = () => {
           <h4 className="vertical-timeline-element-subtitle">
             SKVAD DIGITAL | Budapest
           </h4>
+          <p className="list">
+            • Building with Next js, implementing necessary API data
+          </p>
+          <p className="list">
+            • Next.js · API · styled-components · JavaScript · React.js · Git ·
+            Bootstrap · Redux · Redux-Toolkit · SASS and many more
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -49,11 +56,10 @@ const Timeline = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Freelancer | EyeCandiz.hu
           </h4>
-          <p>
+          <p className="list">
             • Designing and building a wide range of websites based on WordPress
           </p>
-          <p>• Fulfilling all client needs</p>
-          <p>• Finding solutions for special requests</p>
+          <p className="list">• Finding solutions for special requests</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -114,9 +120,11 @@ const Timeline = () => {
           <h4 className="vertical-timeline-element-subtitle">
             DIAGEO | Budapest
           </h4>
-          <p>• Communication with british corporate customers</p>
-          <p>• Checking and managing their invoices</p>
-          <p>• Validation customer certificates</p>
+          <p className="list">
+            • Communication with british corporate customers
+          </p>
+          <p className="list">• Checking and managing their invoices</p>
+          <p className="list">• Validation customer certificates</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
