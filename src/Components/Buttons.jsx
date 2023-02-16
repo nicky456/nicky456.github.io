@@ -1,5 +1,5 @@
 import "./buttons.css";
-import cv from "../img/niki-cv.pdf";
+import cv from "../img/niki-halasi-szabo-cv.pdf";
 
 const Buttons = () => {
   return (
