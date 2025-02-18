@@ -32,74 +32,75 @@ const Introtext = () => {
           <br />• Google is her best friend! Together they could conquer the
           whole wide world.
         </p>
-        <h3>a few small projects i've made in the past</h3>
-        <h4>pokeapi</h4>
+        <h3>a few projects i was working on in the past</h3>
+        <h4>skanzen.hu</h4>
         <p>
-          A small React-Typescript based project with redux-toolkit, styled
-          components and more...
+          This was my first and at the same time independently executed project.
           <br />
-          You can find the{" "}
-          <a
-            href="https://github.com/nicky456/pokeapi"
-            arget="_blank"
-            rel="noreferrer"
-          >
-            repository here
+          Had to create 3 frontend layouts{" "}
+          <a href="https://skanzen.hu/" arget="_blank" rel="noreferrer">
+            skanzen.hu
+          </a>
+          ,{" "}
+          <a href="https://hotel.skanzen.hu/" arget="_blank" rel="noreferrer">
+            hotel.skanzen.hu
           </a>{" "}
-          or{" "}
-          <a
-            href="https://nicky456.github.io/pokeapi/"
-            arget="_blank"
-            rel="noreferrer"
-          >
-            view the app here
+          and{" "}
+          <a href="https://szennai.skanzen.hu/" arget="_blank" rel="noreferrer">
+            szennai.skanzen.hu
           </a>
           .
         </p>
-        <h4>what in the world?</h4>
+        <h4>streamfit.hu</h4>
         <p>
-          A fancy looking app based on REST Countries API to search and filter
-          all the countries in the world
+          I inherited this project from a colleague and had to finish and expand
+          it's functionality.
           <br />
-          You can find the{" "}
-          <a
-            href="https://github.com/nicky456/what_in_the_world"
-            arget="_blank"
-            rel="noreferrer"
-          >
-            repository here
+          <a href="https://streamfit.hu/" arget="_blank" rel="noreferrer">
+            streamfit.hu
           </a>{" "}
-          or{" "}
-          <a
-            href="https://nicky456.github.io/what_in_the_world/"
-            arget="_blank"
-            rel="noreferrer"
-          >
-            view the app here
-          </a>
-          .
         </p>
-        <h4>you can count on me</h4>
+        <h4>aquaticum.hu</h4>
         <p>
-          A basic but fancy calculator app...
+          This was a real teamwork project due to its complexity. I worked on it
+          with two colleagues closely.
           <br />
-          You can find the{" "}
-          <a
-            href="https://github.com/nicky456/calculator"
-            arget="_blank"
-            rel="noreferrer"
-          >
-            repository here
+          <a href="https://www.aquaticum.hu/en" arget="_blank" rel="noreferrer">
+            aquaticum.hu
           </a>{" "}
-          or{" "}
+        </p>
+        <h4>supershop.hu</h4>
+        <p>
+          I joined the project and expanded its functionality on a weekly basis.
+          <br />
+          <a href="https://supershop.hu/" arget="_blank" rel="noreferrer">
+            supershop.hu
+          </a>{" "}
+        </p>
+        <h4>gyermekelsosegely.hu</h4>
+        <p>
+          It is mainly a Flutter-based application, but it also includes a
+          public website. I created the frontend on my own.
+          <br />
+          <i>
+            This application is designed for parents, helping them learn first
+            aid for their children. Additionally, there is a professional
+            version for doctors and ambulance staff, which includes medication
+            search and dosage information. However, for logical reasons, this
+            version is not publicly accessible.
+          </i>
+          <br />
           <a
-            href="https://nicky456.github.io/calculator/"
+            href="https://gyermekelsosegely.hu/"
             arget="_blank"
             rel="noreferrer"
           >
-            view the app here
-          </a>
-          .
+            gyermekelsosegely.hu
+          </a>{" "}
+          <br />
+          <br />
+          <br />
+          and a lot more...
         </p>
       </div>
     </>

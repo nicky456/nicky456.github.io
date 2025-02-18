@@ -3,10 +3,10 @@ import "./skills.css";
 
 const Skills = () => {
   const testData = [
-    { bgcolor: "#2eb8e9", completed: 80, label: "JavaScipt" },
-    { bgcolor: "#fe0b55", completed: 55, label: "TypeScript" },
+    { bgcolor: "#2eb8e9", completed: 85, label: "JavaScipt" },
+    { bgcolor: "#fe0b55", completed: 65, label: "TypeScript" },
     { bgcolor: "#5570d1", completed: 80, label: "React" },
-    { bgcolor: "#fc670b", completed: 80, label: "Next.js" },
+    { bgcolor: "#fc670b", completed: 85, label: "Next.js" },
     { bgcolor: "#8f4ec2", completed: 70, label: "Redux" },
     { bgcolor: "#ffa101", completed: 70, label: "API" },
     { bgcolor: "#f00190", completed: 60, label: "Adobe Photoshop" },

@@ -13,6 +13,32 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
+            background: "linear-gradient(315deg, #97cb82 0%, #31a155 100%)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  #31a155" }}
+          date="2024 - present"
+          iconStyle={{
+            background: "linear-gradient(315deg, #97cb82 0%, #31a155 100%)",
+            color: "#fff",
+          }}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Frontend Developer
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Digital Probe | Budapest
+          </h4>
+          <p className="list">
+            • Building with an exciting fusion of Next js and WordPress
+          </p>
+          <p className="list">
+            • Next.js · tailwind · TypeScript · Git · WordPress and many more
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
             background: "linear-gradient(315deg, #38ceb7 0%, #12a49f 100%)",
             color: "#fff",
           }}
